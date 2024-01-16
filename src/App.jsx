@@ -35,12 +35,12 @@ function App() {
 	return (
 		<>
 			<Navbar />
-			<Routes>
-				<Route index path="/car-show/" element={<Home />} />
-				<Route path="/car-show/about" element={<About />} />
-				<Route path="/car-show/vehicles" element={<Vehicles />} />
-				<Route path="/car-show/contact" element={<Contact />} />
-				<Route path="/car-show/*" element={<NotFound />} />
+			<Routes basename="/car-show">
+				<Route index path="/" element={<Home />} />
+				<Route path="about" element={<About />} />
+				<Route path="vehicles" element={<Vehicles />} />
+				<Route path="contact" element={<Contact />} />
+				<Route path="*" element={<NotFound />} />
 			</Routes>
 			{showScroll && (
 				<div>
