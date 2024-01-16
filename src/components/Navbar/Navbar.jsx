@@ -9,10 +9,10 @@ const Navbar = () => {
             <div className="navbar">
             <a href=""><img src={Logo} className="logo" /></a>
                 <ul className="navbar-items">
-                    <li className="nav-item"><a href="/">Home</a></li>
-                    <li className="nav-item"><a href="about">About</a></li>
-                    <li className="nav-item"><a href="vehicles">Vehicles</a></li>
-                    <li className="nav-item"><a href="contact">Contact</a></li>
+                    <li className="nav-item"><a href="/car-show/">Home</a></li>
+                    <li className="nav-item"><a href="/car-show/about">About</a></li>
+                    <li className="nav-item"><a href="/car-show/vehicles">Vehicles</a></li>
+                    <li className="nav-item"><a href="/car-show/contact">Contact</a></li>
                 </ul>
                 <div className="auth">
                     <a href="" style={{ marginRight: "1rem" }}>Log In</a>
