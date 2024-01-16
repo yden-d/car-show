@@ -1,0 +1,56 @@
+.signup-container {
+    background-color: white;
+    width: 100%;
+    padding: 3em 0 3em 0;
+    margin: 2em 0 2em 0;
+    box-shadow: 0 10px 20px 0 rgb(0 0 0 / 10%);
+    height: auto;
+    position: relative;
+    z-index: 4;
+    color: white;
+    border-radius: 5px;
+    display: flex;
+    flex-direction: column;
+    color: black;
+}
+
+.form-elements {
+    display: flex;
+    flex-wrap: wrap;
+    margin: 2em;
+}
+
+.form-element {
+    display: flex;
+    flex-direction: column;
+    margin: 0 4em 0 3em;
+}
+
+.require {
+    color: red;
+}
+
+.form-element input, select{
+    height: 3em;
+    width: 200px;
+    background-color: white;
+    border-radius: 5px;
+    border: 1px solid rgb(174, 174, 174);
+    padding-left: 1em;
+    font-size: 1em;
+    color: black;
+}
+
+.form-element label {
+    font-weight: bold;
+    align-self: flex-start;
+    margin-bottom: 1em;
+}
+
+.signup-btn {
+    height: 3.2rem;
+    width: 200px;
+    cursor: pointer;
+    margin-top: 1.5em;
+}
+

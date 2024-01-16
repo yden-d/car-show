@@ -1,0 +1,40 @@
+.socials-container {
+    height: 45vh;
+    background-color: white;
+    margin: 3em;
+    overflow: hidden;
+    background-color: rgb(43, 43, 43);
+    box-shadow: 0 10px 20px 0 rgb(0 0 0 / 10%);
+    border-radius: 5px;
+}
+
+.socials-content {
+    display: flex;
+    flex-direction: column; /* Adjust to a column layout */
+    align-items: flex-start; /* Align content to the start horizontally */
+    margin-left: 2em;
+    color: white;
+}
+
+.phone {
+    transform: translateY(-55%);
+    margin-left: auto; /* Move the phone image to the right */
+    margin-top: 1em; /* Adjust the top margin for spacing */
+}
+
+.social-icon {
+    width: 70px;
+    margin-right: 1em;
+}
+
+@media (max-width: 1180px) {
+    .phone {
+        display: none;
+    }
+
+    .socials-container {
+        height: 60vh;
+        display: flex;
+        justify-content: center;
+    }
+}

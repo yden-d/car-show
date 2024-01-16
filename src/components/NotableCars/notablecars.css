@@ -1,0 +1,84 @@
+.car-container {
+    height: 60vh;
+    margin-left: 5em;
+    border-radius: 5px;
+    display: flex;
+    flex-direction: row;
+
+  }
+  
+  .car-list {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start; /* Align buttons to the start of the container */
+  }
+
+  .heading {
+      line-height: 2em;
+      margin-bottom: 5em;
+  }
+  
+  .list-btn,
+  .list-btn-active {
+    margin-bottom: 0.5em;
+    font-size: 1em;
+    width: 12em; /* Constant width for buttons */
+    border-radius: 0;
+  }
+  
+  .list-btn {
+    background-color: rgb(141, 141, 141);
+  }
+  
+  .list-btn:hover {
+    background-color: red;
+  }
+  
+  .list-btn-active {
+    background-color: red;
+  }
+  
+  .car-details {
+    display: block;
+    margin-left: 1em; /* Add some space between buttons and details */
+  }
+  
+  .car-details img {
+    height: 300px;
+  }
+  
+  .car-table {
+    border: 1px solid #ddd; /* Border for the table */
+    margin-top: 1em; /* Add space between image and table */
+    min-width: 25vw;
+  }
+  
+  .car-table td {
+    padding: 8px 10px 8px 0;
+    border-bottom: 1px solid #ddd; /* Border between table rows */
+  }
+  
+  /* Media Query for screens with a maximum width of 768px */
+  @media (max-width: 768px) {
+    .car-container {
+      flex-direction: column; /* Stack items vertically on small screens */
+      align-items: center; /* Center items on small screens */
+      height: 120vh;
+    }
+  
+    .car-details {
+      margin-left: 0; /* Reset margin for small screens */
+      margin-top: 1em; /* Add space between buttons and details on small screens */
+    }
+  
+    .list-btn,
+    .list-btn-active {
+      width: auto; /* Allow buttons to expand to full width on small screens */
+    }
+  
+    .car-table {
+      margin-top: 1em; /* Add space between image and table on small screens */
+      align-self: center;
+    }
+  }
+  

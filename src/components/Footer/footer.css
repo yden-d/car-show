@@ -1,0 +1,21 @@
+.footer-container {
+    display: flex;
+    background-color: rgb(255, 255, 255);
+    width: 100%;
+}
+
+.footer-content {
+    margin: 2rem;
+    min-width: 15vh;
+}
+
+.footer-btn {
+    margin: 0.5rem;
+    width: 200px;
+}
+
+@media (max-width: 780px) {
+    .footer-container {
+        flex-direction: column;
+    }
+}
